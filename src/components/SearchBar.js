@@ -6,7 +6,7 @@ class SearchBar extends React.Component {
   //To prevent form from automatically submitted on pressing enter.
   onFormSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state.term);
+    this.props.onSubmit(this.state.term);
   };
   render() {
     return (
